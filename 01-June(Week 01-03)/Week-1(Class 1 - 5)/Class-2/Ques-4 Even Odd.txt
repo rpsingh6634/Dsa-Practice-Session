@@ -1,0 +1,13 @@
+public static void evenOdd(){
+int min = 0;
+int min 1 = Integer.MIN_VALUE;
+int max = Integer.MAx_VALUE;
+for(int i=1; i<=20; i++){
+if(i%2 == 0){
+System.out.println("Even");
+}
+else{
+System.out.println("Odd");
+}
+}
+}

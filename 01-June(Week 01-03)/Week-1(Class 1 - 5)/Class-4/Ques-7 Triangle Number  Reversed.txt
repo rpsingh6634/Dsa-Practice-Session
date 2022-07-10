@@ -1,0 +1,20 @@
+public static void triangleNumberReverse(int n) {
+int starsLimit = 1; 
+int val = 1; 
+int temp = 1; 
+int range = 2; 
+//for rows 
+for(int i=0; i<n; i++){
+//for stars 
+temp = val; 
+for(int j=0; j<starsLimit; j++){
+System.out.print(val+" "); 
+val--;
+}
+starsLimit++; 
+System.out.println(); 
+val = temp+range; 
+range++;
+}
+}
+}

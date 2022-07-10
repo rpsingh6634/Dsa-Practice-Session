@@ -1,0 +1,9 @@
+private static int countDidits(int n) {
+int count = 0;
+while(n > 0){
+count++;
+n/=10;
+}
+// System.out.println(count);
+return count;
+}

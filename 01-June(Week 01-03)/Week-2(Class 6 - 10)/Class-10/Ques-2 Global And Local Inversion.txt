@@ -1,0 +1,13 @@
+class Solution { 
+public boolean isIdealPermutation(int[] nums) { 
+int n=nums.length;
+int currMax=0; 
+for(int i=0;i<n-2;i++){
+currMax=Math.max(currMax, nums[i]);
+if(currMax>nums[i+2]) {
+return false;
+}
+}
+return true;
+}
+}

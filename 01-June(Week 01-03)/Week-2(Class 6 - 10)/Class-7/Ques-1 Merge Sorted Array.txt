@@ -1,0 +1,23 @@
+private static void mergeSortedArray(int[] arri, int[] arr2) {
+ArrayList<Integer> list = new ArrayList<>(); 
+int ptr1 = 0, ptr2 = 0; 
+while(ptr1 < arr1.length && ptr2 < arr2.length) { 
+if(arr1[ptr1]<arr2[ptr2]){
+list.add(arr1[ptri]);
+ptr1++; 
+}
+else{
+list.add(arr2[ptr2]); 
+ptr2++;
+}
+}
+while(ptri < arri.length) {
+list.add(arr1[ptr1]); 
+ptr1++;
+}
+while(ptr2 < arr2.length) {
+list.add(arr2[ptr2]); 
+ptr2++;
+}
+System.out.println(list);
+}

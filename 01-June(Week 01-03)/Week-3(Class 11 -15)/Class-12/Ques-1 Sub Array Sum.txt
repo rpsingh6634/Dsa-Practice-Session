@@ -1,0 +1,23 @@
+class Solution { 
+public boolean checkSubarraySum(int[] nums, int k) {
+int prefixsum = nums [0]; 
+for(int i=1;i<nums.length;i++){
+if(nums[i]==nums[i-1]){ 
+if(nums[i]==0 || nums[i] %k==0)
+return true;
+}
+prefixsum +=nums[i];
+if(prefixsum%k==0)
+return true;
+int temp =prefixsum; 
+int left_pos =0;
+while(temp>=k && i-left_pos >1) {
+temp -=nums[left_pos++]; 
+// left_pos++; 
+if(temp%k==0)
+return true;
+}
+}
+return false;
+}
+}

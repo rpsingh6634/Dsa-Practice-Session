@@ -1,0 +1,18 @@
+public static void bigTriangle(int n) {
+int starsLimit = 1; 
+int spaceLimit = n-1;
+for rows 
+for(int i=0; i<n; i++){
+//for spaces 
+for(int j=0; j<spaceLimit; j++){
+System.out.print(" ");
+}
+//for stars 
+for(int j=0; j<starsLimit; j++){
+System.out.print("* ");
+}
+starsLimit++; 
+spaceLimit--; 
+System.out.println();
+}
+}

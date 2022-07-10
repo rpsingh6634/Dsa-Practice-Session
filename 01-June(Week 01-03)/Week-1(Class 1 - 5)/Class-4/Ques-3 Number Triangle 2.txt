@@ -1,0 +1,15 @@
+public static void numberTriangle2(int n) {
+int starsLimit = 1; 
+int val = 1; 
+//for rows 
+for(int i=0; i<n; i++){
+//for stars
+ val = 1; 
+for(int j=0; j<starsLimit; j++){
+System.out.print(val +" "); 
+val++;
+}
+starsLimit++; 
+System.out.println();
+}
+}
